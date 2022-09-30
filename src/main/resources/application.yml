@@ -40,35 +40,3 @@ server:
 
 
 
-
-api:
-
-  #  天气查询的城市ID
-  district_id: '371521'
-  #  应用AK
-  ak: 'nxjYtKEXuG8AV6ZxvEMcPgL5qT3UGxEt'
-  #  纪念日：注意格式 yyyy-MM-dd
-  loveDate: '2021-08-23'
-  #  生日：注意格式 yyyy-MM-dd
-  birthday: '1998-08-23'
-  #  天行数据apiKey
-  rainbowKey: '2dd4f7d627911ba8d875908731074df0'
-
-  qweatherKey: 'f0fca9c2f07c4e519092224959b8998f'
-  #位置信息
-  qweatherLocation: '101120807'
-  qweatherType: '5,9,16'
-
-spring:
-  mail:
-    host: smtp.qq.com
-    username: wfgmqhx@qq.com
-    #发送人
-    nickname: 大秦
-    #授权码
-    password: uzzwswouvxiuibid
-    port: 465
-    protocol: smtps
-    default-encoding: utf-8
-
-
