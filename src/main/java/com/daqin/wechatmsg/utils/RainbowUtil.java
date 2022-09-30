@@ -2,8 +2,8 @@ package com.daqin.wechatmsg.utils;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.daqin.wechatmsg.configure.MsgConfigure;
-import com.daqin.wechatmsg.mapper.Result;
+import com.daqin.wechatmsg.configure.ApiConfigure;
+import com.daqin.wechatmsg.mapper.RequestResult;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -13,8 +13,8 @@ import java.net.URL;
 
 
 public class RainbowUtil {
-    public static Result getRainbow() {
-        String httpUrl = "http://api.tianapi.com/caihongpi/index?key=" + MsgConfigure.getRainbowKey();
+    public static RequestResult getRainbow() {
+        String httpUrl = "http://api.tianapi.com/caihongpi/index?key=" + ApiConfigure.getRainbowKey();
         BufferedReader reader = null;
         String rs = null;
         StringBuilder stringBuilder = new StringBuilder();
@@ -38,7 +38,7 @@ public class RainbowUtil {
         }
         JSONObject jsonObject = JSONObject.parseObject(rs);
 
-        Result result = new Result();
+        RequestResult result = new RequestResult();
         if (jsonObject == null) {
             //接口地址有误或者接口没调通
             result.setCode("500");
