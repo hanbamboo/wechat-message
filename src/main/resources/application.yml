@@ -27,7 +27,7 @@ spring:
     #发送人
     nickname: 大秦
     #授权码
-    password: uzzwswouvxiuibid
+    password: 
     port: 465
     protocol: smtps
     default-encoding: utf-8
