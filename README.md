@@ -1,37 +1,43 @@
 # wechatMsg
 
 #### 介绍
-微信测试号推送（SpringBoot）
+微信邮箱天气信息推送（SpringBoot - Java）
 
 #### 软件架构
-软件架构说明
-
+可以通过绑定QQ邮箱来提示每天的天气状况
 
 #### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+![图片演示1](src/main/resources/img01.jpg)
+![图片演示2](src/main/resources/img02.jpg)
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+##### 如何获取城市
 
-#### 参与贡献
+1. **district_id** 找到resourses目录下的csv文档查找相关地址即可
+![查看文档](src/main/resources/setp1-districtid.png)
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+> 最新版本可去百度地图APK
+> https://lbs.baidu.com/index.php?title=webapi/weather
+![获取最新文档](src/main/resources/setp2-getnewcsv.png)
+
+2.**应用AK**
+
+登录百度地图开放平台，创建应用后即可获得
+
+![获取应用ak](src/main/resources/setp3-ak.png)
 
 
-#### 特技
+3. *rainbowKey*
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+注册登录天行数据，每日免费100次彩虹屁接口
+> https://www.tianapi.com/apiview/181
+
+4.**username**
+邮箱
+
+5.**password**
+授权码
+
+
+
