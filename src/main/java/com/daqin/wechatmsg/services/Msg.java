@@ -367,9 +367,8 @@ public class Msg {
                 "\n" +
                 "\t\t</div>";
 
-        rainbow = rainbow.replaceAll("哥哥","你");
-        mailUtil.sendEmail(new String[]{"1203423491@qq.com", "2112869558@qq.com"}, rainbow.replaceAll("XXX", "惠晓倩"), mailContext);
-//        mailUtil.sendEmail(new String[]{"1203423491@qq.com","zxz102033@163.com"}, rainbow, mailContext);
+        
+        mailUtil.sendEmail(new String[]{"xxx@qq.com"}, rainbow, mailContext);
 
         return weather.getNow_uptime()+rainbow+";\n";
     }
